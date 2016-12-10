@@ -58,6 +58,14 @@ a {
   text-decoration: none; }
 
 .c-month {
-  background: #7C7DF0; }
+  background: #7C7DF0;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border: solid #DEDEFC 5px;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: .75rem; }
 
 /*# sourceMappingURL=main.css.map */
