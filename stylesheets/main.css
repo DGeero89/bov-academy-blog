@@ -1,3 +1,25 @@
+.l-header, .l-header__container, .c-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.c-logo {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.c-navigation--header .c-navigation__link--active:after {
+  margin-left: auto;
+  margin-right: auto; }
+
+.c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
+  display: none; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -57,28 +79,6 @@ html, body {
 a {
   text-decoration: none; }
 
-.l-header, .l-header__container, .c-logo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.c-logo {
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.c-navigation--header .c-navigation__link--active:after {
-  margin-left: auto;
-  margin-right: auto; }
-
-.c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
-  display: none; }
-
 *, *:after, *:before {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -93,7 +93,7 @@ body {
   background-color: #1E2226;
   color: white; }
   .l-header__container {
-    width: 90%;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-pack: justify;
@@ -101,6 +101,59 @@ body {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between; }
+
+.l-footer {
+  padding: 60px 20px;
+  background: #1E2226;
+  margin-top: 70px;
+  color: #738494; }
+
+.l-footer__container {
+  max-width: 960px;
+  margin: 0px auto; }
+
+.c-menu--footer {
+  padding-bottom: 30px; }
+
+.c-menu--footer .c-menu__link {
+  text-transform: uppercase;
+  color: #738494;
+  padding: 0 10px; }
+
+.c-social {
+  padding-bottom: 40px;
+  font-size: 26px; }
+
+.c-social__icon {
+  padding: 0 30px; }
+
+.c-social__icon a {
+  color: #738494; }
+
+.c-developers {
+  border-top: 1px solid #738494;
+  padding-top: 40px;
+  text-align: center; }
+
+.c-developers__title {
+  padding-bottom: 40px; }
+
+.c-developers__info {
+  padding: 0 40px; }
+
+.c-developers__info img {
+  border-radius: 50%; }
+
+.c-developers__info p {
+  padding-top: 20px; }
+
+.c-menu {
+  display: flex;
+  justify-content: center; }
+
+.l-list {
+  display: flex;
+  justify-content: center; }
 
 .c-logo {
   align-self: center;
@@ -160,59 +213,5 @@ body {
   /* stops bg color from leaking outside the border: */ }
   .c-themesSwitch__img {
     width: 24px; }
-
-.l-footer {
-  padding: 60px 20px;
-  background: #1E2226;
-  margin-top: 70px;
-  color: #738494; }
-
-.l-footer__container {
-  max-width: 960px;
-  margin: 0px auto; }
-
-.c-menu--footer {
-  padding-bottom: 30px; }
-
-.c-menu--footer .c-menu__link {
-  text-transform: uppercase;
-  color: #738494;
-  padding: 0 10px; }
-
-.c-social {
-  padding-bottom: 40px;
-  font-size: 26px; }
-
-.c-social__icon {
-  padding: 0 30px; }
-
-.c-social__icon a {
-  color: #738494; }
-
-.c-developers {
-  border-top: 1px solid #738494;
-  padding-top: 40px;
-  text-align: center; }
-
-.c-developers__title {
-  padding-bottom: 40px; }
-
-.c-developers__info {
-  padding: 0 40px; }
-
-.c-developers__info img {
-  border-radius: 50%; }
-
-.c-developers__info p {
-  padding-top: 20px; }
-
-.c-menu {
-  display: flex;
-  justify-content: center; }
-
-.l-list {
-  display: flex;
-  justify-content: center; }
-
 
 /*# sourceMappingURL=main.css.map */
