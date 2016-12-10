@@ -58,7 +58,23 @@ a {
   text-decoration: none; }
 
 .l-header {
+  height: 100px;
   background-color: #1E2226;
   color: white; }
+  .l-header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
 
 /*# sourceMappingURL=main.css.map */

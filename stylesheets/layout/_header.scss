@@ -1,5 +1,13 @@
 
 .l-header {
+  height: $header-height;
   background-color: $color-shark;
   color: white();
+
+  @include element('container') {
+    @include flex;
+    width: $header__container-width;
+    @include center;
+    @include flex-direction;
+  }
 }
