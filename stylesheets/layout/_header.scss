@@ -9,5 +9,6 @@
     @extend %flex;
     width: $header__container-width;
     @include center;
+    @include justify-content(space-between);
   }
 }
