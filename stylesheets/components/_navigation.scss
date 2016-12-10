@@ -11,6 +11,7 @@
       color: white(0.5);
     }
 
+    & .c-navigation__link:hover,
     & .c-navigation__link--active {
       color: white(0.9);
     }
