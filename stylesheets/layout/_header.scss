@@ -5,9 +5,9 @@
   color: white();
 
   @include element('container') {
-    @include flex;
+    @extend %flex;
     width: $header__container-width;
     @include center;
-    @include flex-direction;
+    @extend %flex-direction;
   }
 }

@@ -1,4 +1,38 @@
 
 .c-logo {
-  
+
+  @extend %flex;
+  @extend %flex-direction;
+  color: $color-logo;
+
+  @include element('img') {
+    width: 60px;
+    margin-right: 20px;
+  }
+
+  @include element('title') {
+    align-self: center;
+  }
+
+  @include element('span') {
+
+    @include modifier('acronym'){
+      font-family: $robotoSlab;
+      font-size: $fontSize-logo;
+    }
+
+    @include modifier('motto'){
+      display: block;
+      font-size: $fontSize-logo-motto;
+    }
+  }
+
+  @include element('strong') {
+    @include modifier('acronym'){
+      color: $color-picton-blue;
+    }
+    @include modifier('site'){
+      color: $color-logo-site;
+    }
+  }
 }

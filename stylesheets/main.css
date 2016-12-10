@@ -1,3 +1,18 @@
+.l-header__container, .c-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.l-header__container, .c-logo {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -57,24 +72,40 @@ html, body {
 a {
   text-decoration: none; }
 
+*, *:after, *:before {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
+
 .l-header {
   height: 100px;
   background-color: #1E2226;
   color: white; }
   .l-header__container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
     width: 90%;
     margin-left: auto;
-    margin-right: auto;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
+    margin-right: auto; }
+
+.c-logo {
+  color: #cceef6; }
+  .c-logo__img {
+    width: 60px;
+    margin-right: 20px; }
+  .c-logo__title {
+    align-self: center; }
+  .c-logo__span--acronym {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.8rem; }
+  .c-logo__span--motto {
+    display: block;
+    font-size: 0.85em; }
+  .c-logo__strong--acronym {
+    color: #49C4E0; }
+  .c-logo__strong--site {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
