@@ -1,0 +1,45 @@
+@import "resets";
+@import "base";
+
+.l-body {
+	display:flex;
+	flex-wrap: row wrap;
+	flex-direction: column;
+}
+
+.c-header{
+
+	flex: 1 100%;
+    display: flex;
+	background: $color__primary--dark;
+    
+    &__container {
+    	max-width: 1350px;
+		width: 100%;
+		margin: auto;
+		color:white;
+		padding: 20px 25px;
+    }
+
+}
+
+.c-main {
+	flex: 1 100%;
+
+	&__container {
+		max-width: 900px;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.c-footer {
+	flex: 1 100%;
+	background: $color__primary--dark;
+}
+
+.c-header__img {
+	width: 60px;
+	float:left;
+}
+

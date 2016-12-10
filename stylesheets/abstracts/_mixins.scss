@@ -1,0 +1,121 @@
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/// @alias element
+
+@mixin e($element) {
+  @include element($element) {
+    @content;
+  }
+}
+
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/// @alias element
+
+@mixin m($modifier) {
+  @include modifier($modifier) {
+    @content;
+  }
+}
+
+
+
+/// Generate vendors prefix for a particular property
+///
+/// @param {LIST} $map - A map of declarations
+/// @param {LIST} $vendors - Default value dumps all prefixes
+///
+/// @example
+///   #element {
+///     @include prefix((transform, scale(1.5)), webkit o);
+///   }
+///
+
+@mixin prefix($map, $vendors: webkit moz ms o) {
+  @each $prop, $value in $map {
+        @if $vendors {
+          @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $prop}: #{$value};
+          }
+        }
+        // Dump regular property anyway
+        #{$prop}: #{$value};
+  }
+}
+
+/// Generate rounded borders
+///
+/// @param {Number} $radius - The shorthand to set the four properties
+///                           border-top-left-radius, border-top-right-radius,
+///                           border-bottom-right-radius and
+///                           border-bottom-left-radius respectively.
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+/// Generate a positioned element
+///
+/// @param {String} $position - The position system
+/// @param {List} $args - A list of properties
+
+@mixin position($position, $args: null) {
+
+  position: $position;
+
+  @if ($args) {
+    @each $o in top right bottom left {
+          $i: index($args, $o);
+
+      @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number  {
+            #{$o}: nth($args, $i + 1);
+      }
+    }
+  }
+}
+
+
+/// Generate an absolute positioned element
+///
+/// @param {List} $args [null] - A list of properties (if any)
+
+@mixin absolute($args: null) {
+  @include position(absolute, $args);
+}
+
+
+/// Generate a fixed positioned element
+///
+/// @param {List} $args [null] - A list of properties (if any)
+
+@mixin fixed($args: null) {
+  @include position(fixed, $args);
+}
+
+
+/// Generate a relative positioned element
+///
+/// @param {List} $args [null] - A list of properties (if any)
+
+@mixin relative($args: null) {
+  @include position(relative, $args);
+}
