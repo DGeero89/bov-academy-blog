@@ -17,12 +17,12 @@
 
   @include element('span') {
 
-    @include modifier('acronym'){
+    @include modifier('acronym') {
       font-family: $robotoSlab;
       font-size: $fontSize-logo;
     }
 
-    @include modifier('motto'){
+    @include modifier('motto') {
       display: block;
       font-size: $fontSize-logo-motto;
       margin-top: 5px;
@@ -30,10 +30,10 @@
   }
 
   @include element('strong') {
-    @include modifier('acronym'){
+    @include modifier('acronym') {
       color: $color-picton-blue;
     }
-    @include modifier('site'){
+    @include modifier('site') {
       color: $color-logo-site;
     }
   }
