@@ -1,4 +1,29 @@
 
 .c-navigation {
-  
+  @include flex;
+
+  @include modifier('header') {
+    @include flex-align-items(flex-end);
+
+    & .c-navigation__link {
+      position: relative;
+      padding: 15px 30px;
+      color: white(0.5);
+    }
+
+    & .c-navigation__link--active {
+      color: white(0.9);
+    }
+
+    & .c-navigation__link--active:after {
+        content: '';
+        display: inline-block;
+        @include absolute(left 0 bottom 0);
+        width: 100%;
+        height: 3px;
+        @extend %center;
+        background: $color-picton-blue;
+    }
+  }
 }
+
