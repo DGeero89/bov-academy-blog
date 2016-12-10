@@ -1,0 +1,22 @@
+.c-themesSwitch {
+  padding: 10px;
+  background-color: white(0.1);
+  align-self: center;
+  @include border-radius(5px);
+
+  @include element('input') {
+    &:checked{
+      & ~ .l-list {
+        @extend %hidden;
+      }
+    }
+    @include modifier('hidden') {
+      @extend %hidden;
+    }
+  }
+
+  @include element('img') {
+    width: 24px;
+  }
+
+}
