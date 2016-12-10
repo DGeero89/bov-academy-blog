@@ -17,7 +17,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.c-themesSwitch__input:checked ~ .l-list, .c-themesSwitch__input--hidden {
+.c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
   display: none; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
