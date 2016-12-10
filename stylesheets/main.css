@@ -58,14 +58,28 @@ a {
   text-decoration: none; }
 
 .c-month {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #7C7DF0;
-  width: 3rem;
-  height: 3rem;
-  display: inline-block;
-  border: solid #DEDEFC 5px;
+  width: 3.625rem;
+  height: 3.625rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  border: 0.3125rem solid #DEDEFC;
   border-radius: 50%;
   text-align: center;
   color: #FFFFFF;
-  font-size: .75rem; }
+  font-size: .75rem;
+  line-height: 3rem; }
+  .c-month:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 4.4rem;
+    height: 4.4rem;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: -11px;
+    left: -11px; }
 
 /*# sourceMappingURL=main.css.map */
