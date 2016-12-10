@@ -1,6 +1,7 @@
 
 .l-header {
-  height: $header-height;
+  @extend %flex;
+  min-height: $header-height;
   background-color: $color-shark;
   color: white();
 
@@ -8,6 +9,5 @@
     @extend %flex;
     width: $header__container-width;
     @include center;
-    @extend %flex-direction;
   }
 }

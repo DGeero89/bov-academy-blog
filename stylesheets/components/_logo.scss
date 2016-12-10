@@ -3,6 +3,7 @@
 
   @extend %flex;
   @extend %flex-direction;
+  align-self: center;
   color: $color-logo;
 
   @include element('img') {
@@ -24,6 +25,7 @@
     @include modifier('motto'){
       display: block;
       font-size: $fontSize-logo-motto;
+      margin-top: 5px;
     }
   }
 

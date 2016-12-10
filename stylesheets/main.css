@@ -1,11 +1,11 @@
-.l-header__container, .c-logo {
+.l-header, .l-header__container, .c-logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.l-header__container, .c-logo {
+.c-logo {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -82,7 +82,7 @@ body {
   font-size: 1rem; }
 
 .l-header {
-  height: 100px;
+  min-height: 100px;
   background-color: #1E2226;
   color: white; }
   .l-header__container {
@@ -91,6 +91,7 @@ body {
     margin-right: auto; }
 
 .c-logo {
+  align-self: center;
   color: #cceef6; }
   .c-logo__img {
     width: 60px;
@@ -102,7 +103,8 @@ body {
     font-size: 1.8rem; }
   .c-logo__span--motto {
     display: block;
-    font-size: 0.85em; }
+    font-size: 0.85em;
+    margin-top: 5px; }
   .c-logo__strong--acronym {
     color: #49C4E0; }
   .c-logo__strong--site {
