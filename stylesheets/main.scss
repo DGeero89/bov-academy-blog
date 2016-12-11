@@ -8,6 +8,7 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'layout/header';
+@import 'layout/body';
 @import 'layout/footer';
 @import 'layout/navigation';
 @import 'layout/list';
@@ -20,6 +21,7 @@
 @import 'components/post_date';
 @import 'components/search';
 @import 'components/paginate';
+@import 'components/link';
 
 
 @import 'components/logo';
@@ -33,7 +35,9 @@
 
 @import 'components/form';
 @import 'components/blog-posts';
+@import 'components/single_post';
 
+@import 'components/code';
 
 // @import 'pages/..';
 

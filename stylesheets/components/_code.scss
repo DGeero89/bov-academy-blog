@@ -1,0 +1,63 @@
+
+.c-code {
+  padding: 20px;
+  @extend %center;
+  color: $color-trout;
+
+  @media screen and (min-width: conf($configuration-breakpoints, 'tablet')) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+    width: 100%;
+  }
+
+
+    @include e('body') {
+      font-size: .8em;
+      background-color: $color-wild-sand;
+      padding: 10px;
+
+      @media screen and (min-width: conf($configuration-breakpoints, 'tablet')) {
+        font-size: 1em;
+        padding: 40px;
+      }
+    }
+
+    @include e('caption') {
+      padding: 10px 20px;
+      font-size: .8em;
+    }
+
+    @include e('item') {
+      position: relative;
+      counter-increment: step-counter;
+      padding: 10px 0;
+
+        &:before {
+          content: counter(step-counter);
+          padding: 3px 8px;
+        }
+    }
+
+    @include e('color') {
+
+      &--var,
+      &--obj {
+        color: $color-pizazz;
+      }
+      &--varName {
+        color: $color-dodger-blue;
+      }
+      &--number {
+        color: $color-bittersweet;
+      }
+      &--method {
+        color: $color-heliotrope;
+      }
+      &--comment {
+        color: black(.3);
+      }
+    }
+
+}

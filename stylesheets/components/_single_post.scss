@@ -1,0 +1,37 @@
+.c-single-post{
+
+  .c-single-post__featured-image{
+    max-height:400px;
+    overflow: hidden;
+    img{
+      z-index: -1;
+    }
+  }
+  .c-single-post__body{
+    position: relative;
+    width:100%;
+    top:-100px;
+    background: $color-white;
+    background-size: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    color: $color-mako;
+    .c-single-post__date{
+      width:10%;
+    }
+    .c-single-post__info{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
+
+.c-next-post{
+  margin-top:40px;
+  .c-next-post__buttons{
+    margin-top:20px;
+  }
+}

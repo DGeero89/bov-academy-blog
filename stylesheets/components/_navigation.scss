@@ -3,12 +3,13 @@
   @include flex;
 
   @include modifier('header') {
+    color: white(0.5);
     @include flex-align-items(flex-end);
 
     & .c-navigation__link {
       position: relative;
       @include padding(15px, 10px);
-      color: white(0.5);
+      color: inherit;
 
       @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
         @include padding(15px, 30px);
@@ -29,6 +30,20 @@
         @extend %center;
         background: $color-picton-blue;
     }
+  }
+
+  @include modifier('code') {
+    color: black(.5);
+
+      & .c-navigation__link {
+        font-size: .9em;
+        @extend %smallCaps;
+      }
+
+      & .c-navigation__link:hover,
+      & .c-navigation__link--active {
+        color: $color-picton-blue;
+      }
   }
 }
 
