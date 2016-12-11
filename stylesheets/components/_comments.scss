@@ -1,34 +1,102 @@
-.c-comment {
-	display: flex;
+$borderBottom: 1px solid black(.1);
+
+.c-comments {
   position: relative;
-  @include e(img){
-  	@include border-radius(50%);
-  	max-width: 50px;
-  	margin: 0 20px 10px 10px;
-  }
-  @include e(body){
-  	@include e(author){
-			margin: 0 0 1em;
-  	}
-  	@include e(subject){
-  		font-weight: 700;
-  		margin: 0 0 .85em;
-  	}
-  	@include e(message){
-  		margin: 0 0 20px;
-  	}
-  }
-  @include e(details){
-  	@include e(timestamp){
-  		position: absolute;
-    	right: 0;
-    	top: 0;
-    	font-size: .8em;
-  	}
-  }
-  @include e(view-replies){
-  	position: absolute;
-    right: 0;
-    bottom: 0;
-  }
+  @include flex;
+  @include flex-direction(column);
+  max-width: $max-width;
+  padding: 15px;
+  color: $color-trout;
+  @extend %center;
+
+
+    @include e('title') {
+      text-transform: capitalize;
+      text-align: center;
+      border-bottom: $borderBottom;
+      padding: 20px;
+      margin: 0;
+
+      @include m('addComment') {
+        @extend %smallCaps;
+        text-transform: initial;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+
+    .l-list--comments,
+    .l-list--replies {
+      flex-direction: column;
+    }
+
+    .l-list--replies {
+      @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+        .c-comment {
+          padding-left: 60px;
+        }
+      }
+    }
+
+}
+
+
+
+.c-comment {
+  position: relative;
+  @include flex;
+  @include flex-direction(column);
+  padding: 20px;
+  border-bottom: $borderBottom;
+
+    @include e('body') {
+      @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+          @include relative(top -25px);
+          padding-left: 60px;
+      }
+    }
+    @include e('message'){
+      line-height: 1.5em;
+    }
+
+
+    @include e('span') {
+      @include m('timestamp') {
+        @include absolute(top 50px left 60px);
+        font-size: .7rem;
+        @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+          left: initial;
+          top: 25px;
+          right: 0;
+        }
+      }
+
+      @include m('counterReplies') {
+        padding: 3px 10px;
+        margin-left: 10px;
+        color: $color-white;
+        background-color: $color-picton-blue;
+        @include border-radius(5px);
+      }
+    }
+
+    @include e('title') {
+      @include m('subject') {
+        padding: 20px 0;
+        font-weight: 600;
+      }
+    }
+
+    @include e('actions') {
+      @include flex;
+      @include justify-content(space-between);
+      @include flex-align-items(flex-end);
+      @include padding(20px, 0, 10px);
+    }
+
+    @include e('link') {
+      font-size: .7em;
+      color: inherit;
+      @extend %smallCaps;
+    }
 }

@@ -269,4 +269,25 @@
   }
 }
 
+/// Generate margin for an element
+/// @param {Value} $top - Margin top
+/// @param {Value} $right - Margin Right
+/// @param {Value} $bottom - Margin Bottom
+/// @param {Value} $left - Margin Left
+
+@mixin margin($top, $right, $bottom: $top, $left: $right) {
+  @if ($top != null) {
+    margin-top: $top;
+  }
+  @if ($right != null) {
+    margin-right: $left;
+  }
+  @if ($bottom != null) {
+    margin-bottom: $bottom;
+  }
+  @if ($left != null) {
+    margin-left: $left;
+  }
+}
+
 
