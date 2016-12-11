@@ -8,3 +8,15 @@ body {
   font-family: $roboto;
   font-size: $base-fontSize;
 }
+
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	margin: 1em 0 1.5em;
+}
+
+h2{
+	font-size: 24px;
+	margin: 1em 0 1.5em;
+	border-bottom: 1px solid $color-slate-gray;
+}
