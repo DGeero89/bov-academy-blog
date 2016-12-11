@@ -12,6 +12,8 @@
   }
 
   @include element('title') {
+    font-size: $base-fontSize;
+    margin: 0;
     align-self: center;
   }
 
