@@ -13,6 +13,10 @@ $roboto:      Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $robotoSlab: 'Roboto Slab', serif;
 
 
+$base-fontSize: 1rem;
+$fontSize-logo: $base-fontSize * 1.8;
+$fontSize-logo-motto: .85em;
+
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
@@ -26,12 +30,18 @@ $color-white: #FFFFFF;
 $color-picton-blue: #49C4E0;
 $color-slate-gray: #738494;
 $color-viking: #71C9DA;
+$color-slate-gray: #738494;
+
+$color-logo: lighten($color-picton-blue, 30%);
+$color-logo-site: lighten($color-picton-blue, 50%);
 
 
 // ----------------------------------------------------------------------
-// Width
+// Widths & Heights
 // ----------------------------------------------------------------------
 
 $min-width: 320px;
-$max-width: 1200px;
+$max-width: 960px;
 
+$header-height: 100px;
+$header__container-width: 960px;
