@@ -1,14 +1,43 @@
+$borderBottom: 1px solid black(.1);
+
 .c-comments {
   position: relative;
   @include flex;
   @include flex-direction(column);
+  max-width: $max-width;
+  padding: 15px;
   color: $color-trout;
-  @include margin(20px, 20px);
+  @extend %center;
+
 
     @include e('title') {
       text-transform: capitalize;
-      @extend %center ;
+      text-align: center;
+      border-bottom: $borderBottom;
+      padding: 20px;
+      margin: 0;
+
+      @include m('addComment') {
+        @extend %smallCaps;
+        text-transform: initial;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
     }
+
+    .l-list--comments,
+    .l-list--replies {
+      flex-direction: column;
+    }
+
+    .l-list--replies {
+      @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+        .c-comment {
+          padding-left: 60px;
+        }
+      }
+    }
+
 }
 
 
@@ -17,9 +46,8 @@
   position: relative;
   @include flex;
   @include flex-direction(column);
-  padding: 20px 0 10px 0;
-  border-top: 1px solid black(.3);
-  border-bottom: 1px solid black(.3);
+  padding: 20px;
+  border-bottom: $borderBottom;
 
     @include e('body') {
       @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {

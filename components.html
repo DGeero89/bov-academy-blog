@@ -102,13 +102,85 @@
       <!-- Comment -->
       <div class="c-comments">
         <h2 class="c-comments__title">comments</h2>
-          <ul class="l-list">
+        <ul class="l-list l-list--comments">
+          <li class="l-list__item">
+            <div class="c-comment">
+              <!-- author component -->
+              <div class="c-author">
+                <img class="c-author__img" src="http://placehold.it/100x100" />
+                <div class="c-author__details">
+                  <span class="c-author__span c-author__span--fullname">Vladamir Babic</span>
+                  <span class="c-author__span c-author__span--timestamp">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    December 16, 2017 2:34 pm
+                  </span>
+                </div>
+              </div>
+              <!-- End author component -->
+              <div class="c-comment__body">
+                <h4 class="c-comment__title c-comment__title--subject">This is the subject of the comment.</h4>
+                <p class="c-comment__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. Lorem ipsum Proident fugiat in labore irure dolor officia dolore dolor adipisicing velit magna consectetur aliqua laboris dolor in anim consectetur in irure id id minim in Excepteur elit Excepteur deserunt. Lorem ipsum Ea labore reprehenderit tempor. Lorem ipsum Velit qui ea laborum eu ex nisi velit nisi eu non incididunt cillum non ad elit Duis irure ut pariatur ullamco tempor deserunt sit. Lorem ipsum Qui nulla do labore ut veniam nulla do culpa veniam exercitation eu minim id ut velit nostrud dolor sint consectetur.
+                </p>
+                <div class="c-comment__actions">
+                  <a class="c-comment__link" title="Reply" href="#">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    Reply
+                  </a>
+                  <div class="c-comment__replies">
+                    <a class="c-comment__link" title="Reply" href="#">
+                      show replies
+                    </a>
+                    <span class="c-comment__span c-comment__span--counterReplies">
+                      12
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- End Body -->
+            </div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-comment">
+              <!-- author component -->
+              <div class="c-author">
+                <img class="c-author__img" src="http://placehold.it/100x100" />
+                <div class="c-author__details">
+                  <span class="c-author__span c-author__span--fullname">ana york</span>
+                  <span class="c-author__span c-author__span--timestamp">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    December 18, 2017 1:22 pm
+                  </span>
+                </div>
+              </div>
+              <!-- End author component -->
+              <div class="c-comment__body">
+                <h4 class="c-comment__title c-comment__title--subject">This is the subject of the comment.</h4>
+                <p class="c-comment__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment.
+                </p>
+                <div class="c-comment__actions">
+                  <a class="c-comment__link" title="Reply" href="#">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    Reply
+                  </a>
+                  <div class="c-comment__replies">
+                    <a class="c-comment__link" title="Reply" href="#">
+                      Hide replies
+                    </a>
+                    <span class="c-comment__span c-comment__span--counterReplies">
+                      1
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- End Body -->
+            </div>
+            <ul class="l-list l-list--replies">
               <li class="l-list__item">
                 <div class="c-comment">
                   <!-- author component -->
                   <div class="c-author">
                     <img class="c-author__img" src="http://placehold.it/100x100" />
-                    <div class="c-author__p c-author_p--details">
+                    <div class="c-author__details">
                       <span class="c-author__span c-author__span--fullname">Vladamir Babic</span>
                       <span class="c-author__span c-author__span--timestamp">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -120,26 +192,36 @@
                   <div class="c-comment__body">
                     <h4 class="c-comment__title c-comment__title--subject">This is the subject of the comment.</h4>
                     <p class="c-comment__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment.
+                    Lorem ipsum Ut minim ut non ullamco in cillum cillum labore nostrud reprehenderit velit magna fugiat amet incididunt proident tempor minim reprehenderit in laboris commodo minim ut mollit id exercitation culpa cillum voluptate in fugiat tempor culpa in do ullamco elit exercitation commodo consectetur do culpa consequat occaecat sunt minim aliquip aliquip dolore elit culpa eu id ad cupidatat consectetur ea sint in id veniam consequat id consequat nulla anim Duis laboris sed ad deserunt dolore reprehenderit dolor in pariatur proident ut Duis exercitation occaecat nulla in elit eiusmod commodo amet non in proident incididunt in dolore officia nulla exercitation dolore laborum cillum nisi et pariatur sit aute dolor cupidatat sed reprehenderit dolore laboris amet dolor deserunt anim Excepteur enim tempor aliquip nostrud dolor officia dolore proident quis velit enim aliquip Duis ex est occaecat anim aute qui et mollit aliquip eu sit adipisicing consectetur ullamco eu id veniam laborum mollit in exercitation amet consequat dolor proident do non in veniam quis officia ut irure deserunt mollit cillum sint reprehenderit laborum officia dolore mollit mollit ea commodo deserunt magna labore reprehenderit magna sint et est Ut qui reprehenderit et dolore fugiat exercitation do occaecat non ad nostrud quis consectetur deserunt cillum amet magna dolore consectetur do do amet pariatur et reprehenderit quis incididunt voluptate sint sint cillum consectetur irure eu sit magna dolor qui consequat non consequat exercitation enim non voluptate elit elit fugiat Ut eiusmod exercitation occaecat consectetur sunt tempor non.
                     </p>
                     <div class="c-comment__actions">
                       <a class="c-comment__link" title="Reply" href="#">
                         <i class="fa fa-comment" aria-hidden="true"></i>
                         Reply
                       </a>
-                      <div class="c-comment__replies">
-                        <a class="c-comment__link" title="Reply" href="#">
-                          show replies
-                        </a>
-                        <span class="c-comment__span c-comment__span--counterReplies">
-                          12
-                        </span>
-                      </div>
                     </div>
                   </div>
                   <!-- End Body -->
                 </div>
               </li>
-          </ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="c-comments__add-comment">
+          <h4 class="c-comments__title c-comments__title--addComment">add comment</h4>
+          <div class="c-comments__add-comment">
+            <div class="c-author c-author--addComment">
+              <img class="c-author__img c-author__img--addComment" src="http://placehold.it/100x100" />
+              <div class="c-author__details c-author__details--addComment">
+                <form class="c-form" method="post" action="#">
+                  <input class="c-form__input c-form__input--text" id="subject" name="subject" placeholder="Enter a subject" type="text" />
+                  <textarea class="c-form__input c-form__input--textarea" id="comment" name="comment" placeholder="Write your comment..."></textarea>
+                  <input class="c-button c-button--normal c-button--rounded c-button--picton-blue c-button--centered c-button--smallCaps" type="submit" value="add comment" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!--
