@@ -1,4 +1,11 @@
 .l-list{
   display: flex;
   justify-content: center;
+
+  @include m('row-on-small-screen') {
+    flex-direction: column;
+    @media screen and (min-width: conf($configuration-breakpoints, 'tablet')) {
+      flex-direction: row;
+    }
+  }
 }
