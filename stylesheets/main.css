@@ -144,4 +144,23 @@ a {
     font-weight: 500;
     text-transform: uppercase; }
 
+.c-search {
+  position: relative;
+  line-height: 40px; }
+  .c-search .c-search__input input {
+    padding: 5px 5px 5px 50px;
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #71C9DA;
+    background: #F2F5F9;
+    font-size: 25px;
+    color: #738494; }
+  .c-search .c-search__icon {
+    position: absolute;
+    font-size: 20px;
+    top: 3%;
+    left: 15px;
+    color: #738494; }
+
 /*# sourceMappingURL=main.css.map */
