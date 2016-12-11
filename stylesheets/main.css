@@ -124,6 +124,10 @@ h2 {
       .l-header__container {
         width: 90%; } }
 
+.c-main__container {
+  width: 960px;
+  margin: 0 auto; }
+
 .l-footer {
   padding: 60px 20px;
   background: #1E2226;
@@ -236,7 +240,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 8% 0; }
+  padding: 60% 40%; }
   .c-post-date .c-post-date__day {
     font-size: 24px; }
   .c-post-date .c-post-date__month {
@@ -679,5 +683,27 @@ h2 {
 .c-blog-post__links {
   margin: 2rem;
   border: solid red 2px; }
+
+.c-single-post .c-single-post__featured-image {
+  max-height: 400px;
+  overflow: hidden; }
+  .c-single-post .c-single-post__featured-image img {
+    z-index: -1; }
+.c-single-post .c-single-post__body {
+  position: relative;
+  top: -100px;
+  background: #fff;
+  background-size: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 60px;
+  color: #3F444B; }
+  .c-single-post .c-single-post__body .c-single-post__date {
+    width: 10%; }
+  .c-single-post .c-single-post__body .c-single-post__info {
+    margin-left: 5%;
+    margin-right: 5%; }
 
 /*# sourceMappingURL=main.css.map */
