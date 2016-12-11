@@ -7,8 +7,12 @@
 
     & .c-navigation__link {
       position: relative;
-      padding: 15px 30px;
+      @include padding(15px, 10px);
       color: white(0.5);
+
+      @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+        @include padding(15px, 30px);
+      }
     }
 
     & .c-navigation__link:hover,

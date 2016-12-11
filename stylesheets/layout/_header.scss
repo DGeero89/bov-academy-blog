@@ -1,14 +1,17 @@
 
 .l-header {
-  @extend %flex;
-  min-height: $header-height;
+  min-height: conf($configuration-header, 'min-height');
   background-color: $color-shark;
-  color: white();
 
   @include element('container') {
     @extend %flex;
-    width: $header__container-width;
+    min-height: inherit;
     @include center;
-    @include justify-content(space-between);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+
+    @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+      width: conf($configuration-header, 'container-width');
+    }
   }
 }

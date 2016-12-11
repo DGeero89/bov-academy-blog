@@ -216,6 +216,22 @@
   align-items: $value;
 }
 
+
+// Flexbox Wrap
+/// @param {String} $value [nowrap] -  nowrap | wrap | wrap-reverse
+// http://w3.org/tr/css3-flexbox/#flex-wrap-property
+
+@mixin flex-wrap($value: nowrap) {
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  @if $value == nowrap {
+    -ms-flex-wrap: none;
+  } @else {
+    -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
 //Tranform Element
 
 @mixin transform($transforms) {
@@ -225,7 +241,32 @@
   -webkit-transform: $transforms;
           transform: $transforms;
 }
+
 // rotate transform
+
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
+
+/// Generate padding for an element
+/// @param {Value} $top - Padding top
+/// @param {Value} $right - Padding Right
+/// @param {Value} $bottom - Padding Bottom
+/// @param {Value} $left - Padding Left
+
+@mixin padding($top, $right, $bottom: $top, $left: $right) {
+  @if ($top != null) {
+    padding-top: $top;
+  }
+  @if ($right != null) {
+    padding-right: $left;
+  }
+  @if ($bottom != null) {
+    padding-bottom: $bottom;
+  }
+  @if ($left != null) {
+    padding-left: $left;
+  }
+}
+
+

@@ -3,6 +3,7 @@
   background-color: white(0.1);
   align-self: center;
   @include border-radius(5px);
+  @extend %hidden;
 
   @include element('input') {
     @include modifier('hidden') {
@@ -16,8 +17,19 @@
     }
   }
 
+  @include element('label') {
+    font-size: 1.4em;
+    color: white(.4);
+    @include padding(0, 5px, 0, 10px);
+    @extend %pointer;
+  }
+
   @include element('img') {
-    width: 24px;
+    width: 16px;
+  }
+
+  @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+    display: block;
   }
 
 }
