@@ -7,8 +7,8 @@
 
   @include element('container') {
     @extend %flex;
-    width: $header__container-width;
+    width: get-configuration($configuration-header, 'container-width');
     @include center;
-    @include justify-content(space-between);
+    @include justify-content(space-around);
   }
 }
