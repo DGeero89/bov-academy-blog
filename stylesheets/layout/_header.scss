@@ -6,8 +6,11 @@
   @include element('container') {
     @extend %flex;
     min-height: inherit;
-    width: conf($configuration-header, 'container-width');
     @include center;
     @include justify-content(space-around);
+
+    @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+      width: conf($configuration-header, 'container-width');
+    }
   }
 }
