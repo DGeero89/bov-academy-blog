@@ -128,6 +128,9 @@ h2 {
   width: 960px;
   margin: 0 auto; }
 
+@media (max-width: 960px) {
+  .c-main__container {
+    width: 100%; } }
 .l-footer {
   padding: 60px 20px;
   background: #1E2226;
@@ -725,6 +728,11 @@ h2 {
   .c-single-post .c-single-post__body .c-single-post__info {
     margin-left: 5%;
     margin-right: 5%; }
+
+.c-next-post {
+  margin-top: 40px; }
+  .c-next-post .c-next-post__buttons {
+    margin-top: 20px; }
 
 .c-code {
   padding: 20px;
