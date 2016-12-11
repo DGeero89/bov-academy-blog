@@ -1,3 +1,25 @@
+.l-header, .l-header__container, .c-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.c-logo {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.c-navigation--header .c-navigation__link--active:after {
+  margin-left: auto;
+  margin-right: auto; }
+
+.c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
+  display: none; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -57,6 +79,29 @@ html, body {
 a {
   text-decoration: none; }
 
+*, *:after, *:before {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
+
+.l-header {
+  min-height: 100px;
+  background-color: #1E2226;
+  color: white; }
+  .l-header__container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+
 .l-footer {
   padding: 60px 20px;
   background: #1E2226;
@@ -109,5 +154,64 @@ a {
 .l-list {
   display: flex;
   justify-content: center; }
+
+.c-logo {
+  align-self: center;
+  color: #cceef6; }
+  .c-logo__img {
+    width: 60px;
+    margin-right: 20px; }
+  .c-logo__title {
+    align-self: center; }
+  .c-logo__span--acronym {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.8rem; }
+  .c-logo__span--motto {
+    display: block;
+    font-size: 0.85em;
+    margin-top: 5px; }
+  .c-logo__strong--acronym {
+    color: #49C4E0; }
+  .c-logo__strong--site {
+    color: white; }
+
+.c-navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .c-navigation--header {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end; }
+    .c-navigation--header .c-navigation__link {
+      position: relative;
+      padding: 15px 30px;
+      color: rgba(255, 255, 255, 0.5); }
+    .c-navigation--header .c-navigation__link:hover, .c-navigation--header .c-navigation__link--active {
+      color: rgba(255, 255, 255, 0.9); }
+    .c-navigation--header .c-navigation__link--active:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #49C4E0; }
+
+.c-themesSwitch {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-self: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .c-themesSwitch__img {
+    width: 24px; }
 
 /*# sourceMappingURL=main.css.map */
