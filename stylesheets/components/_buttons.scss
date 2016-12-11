@@ -1,0 +1,68 @@
+.c-button {
+	margin:0;
+	border:0;
+	padding: 10px 25px 10px 10px;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	overflow: visible;
+	text-transform: none;
+	position: relative;
+	font-family: $roboto;
+	color: $color-trout;
+	font-weight: 300;
+
+	&:focus{
+		outline: none;
+	}
+	
+	@include e(quick-read){
+		&:before{
+			content: "\f0dc";
+			font-family: FontAwesome;
+			font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+    	padding: 0 10px 0 0;
+		}
+	}
+
+	@include e(go-to-post){
+		&:before{
+			content: "\f2d0";
+			font-family: FontAwesome;
+			font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+    	padding: 0 5px 0 0; 
+		}
+	}
+
+	@include e(subscribe){
+		@include position(fixed);
+		@include rotate(-90);
+		text-transform: uppercase;
+		padding: 10px 25px;
+		top: 30%;
+		right: -40px;
+		font-weight: 400;
+	}
+	
+	@include m(bordered){
+		@include border-radius(2px);
+		border: 1px solid $color-heather;
+	}
+
+	@include m(small){
+		font-size: .8em;
+	}
+
+	@include m(blue){
+		background: $color-morning-glory;
+		border: 1px solid $color-half-baked;
+		color: $color-gothic;
+	}
+	
+}
