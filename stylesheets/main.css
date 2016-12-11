@@ -82,4 +82,14 @@ a {
     top: -11px;
     left: -11px; }
 
+.c-archive-posts {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.c-archive-posts__year {
+  font-size: 1.3rem;
+  color: #ACB9C8;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 1rem 1rem; }
+
 /*# sourceMappingURL=main.css.map */
