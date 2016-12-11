@@ -23,4 +23,8 @@
 		top: -11px;
 		left: -11px;
 	}
+	@media (min-width: 700px) {
+		margin: 0;
+		left: -2rem;
+	}
 }

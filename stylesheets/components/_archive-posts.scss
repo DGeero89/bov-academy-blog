@@ -1,25 +1,65 @@
 .c-archive-posts {
-	font-family: $roboto;
+	color: $color-arsenic;
+	z-index: -30;
+	@media (min-width: 700px) {
+		border-left: solid $color-periwinkle-gray;
+	}
 }
 
 .c-archive-posts__year {
 	font-size: 1.3rem;
 	color: $color-cadet-blue;
 	text-align: center;
-	letter-spacing: 3px;
-	margin: 1rem 1rem;
+	letter-spacing: .1875rem;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	@media (min-width: 700px) {
+		text-align: left;
+		left: -2rem;
+		position: relative;
+		background: $color-white;
+		padding-bottom: 2.6rem;
+		margin-bottom: 0;
+	}
 }
 
 .c-archive-posts__entry {
-
+	text-align: center;
+	width: 18.126rem;
+	margin: 0 auto;
+	position: relative;
+	top: -1.7rem;
+	z-index: -2;
+	@media (min-width: 700px) {
+		width: 500px
+		margin 0 auto;
+		top: -3.7rem;
+	}
 }
 
 .c-archive-posts__image {
-	// IMAGE HEIGHT 121PX
-	// IMAGE WIDTH 290PX
+	max-width: 18.126rem;
+	margin-bottom: .7rem;
+	@media (min-width: 700px) {
+		max-width: 35rem;
+		// height: 14.6875rem;
+
+	}
 }
 
 .c-archive-posts__title {
+	font-weight: 700;
+	line-height: 1.5625rem;
+	margin-bottom: 3rem;
+	text-align: left;
+	max-width: 18.126rem;
+	@media (min-width: 700px) {
+		// max-width: 35rem;
+		margin-bottom: 0;
+	}
 
 }
 
+body {
+	// background: coral;
+}
