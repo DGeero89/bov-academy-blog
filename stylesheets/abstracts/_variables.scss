@@ -54,3 +54,19 @@ $configuration-header: (
   'min-height': 100px,
   'container-width': 90%
 );
+
+
+// ----------------------------------------------------------------------
+// Responsiveness
+// ----------------------------------------------------------------------
+
+$configuration-breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1024px,
+  desktopHD: 1200px) !default;
+
+
+
+
+
