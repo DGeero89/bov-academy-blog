@@ -98,24 +98,67 @@
       <a href="" class="c-button c-button__quick-read c-button--bordered">Quick Read</a>
       <a href="" class="c-button c-button__go-to-post c-button--bordered">Go To Post</a>
 
-      <h2>Comments</h2>
-      <!-- Comment-->
-      <div class="c-comment">
-        <div class="c-comment__author-pic">
-          <img class="c-comment__img" src="http://placehold.it/50x50" />
-        </div>
-        <div class="c-comment__body">
-          <h3 class="c-comment__body__author">Vladamir Babic</h3>
-          <h4 class="c-comment__body__subject">This is the subject of the comment.</h4>
-          <p class="c-comment__body__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. 
 
-          </p>
-          <a href="" class="c-button__reply">Reply</a>
-        </div> 
-        
+      <!-- Comment -->
+      <div class="c-comments">
+        <h2 class="c-comments__title">comments</h2>
+          <ul class="l-list">
+              <li class="l-list__item">
+                <div class="c-comment">
+                  <!-- author component -->
+                  <div class="c-author">
+                    <img class="c-author__img" src="http://placehold.it/100x100" />
+                    <div class="c-author__p c-author_p--details">
+                      <span class="c-author__span c-author__span--fullname">Vladamir Babic</span>
+                      <span class="c-author__span c-author__span--timestamp">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        December 16, 2017 2:34 pm
+                      </span>
+                    </div>
+                  </div>
+                  <!-- End author component -->
+                  <div class="c-comment__body">
+                    <h4 class="c-comment__title c-comment__title--subject">This is the subject of the comment.</h4>
+                    <p class="c-comment__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment.
+                    </p>
+                    <div class="c-comment__actions">
+                      <a class="c-comment__link" title="Reply" href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Reply
+                      </a>
+                      <div class="c-comment__replies">
+                        <a class="c-comment__link" title="Reply" href="#">
+                          show replies
+                        </a>
+                        <span class="c-comment__span c-comment__span--counterReplies">
+                          12
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Body -->
+                </div>
+              </li>
+          </ul>
+      </div>
 
-        <span class="c-comment__details__timestamp">December 16, 2017 2:34 pm</span>
-        <a href="" class="c-comment__view-replies c-button--small">View Replies</a>
+      <!--
+
+          <div class="c-comments__author-pic">
+            <img class="c-comments__img" src="http://placehold.it/50x50" />
+          </div>
+          <div class="c-comments__body">
+            <h3 class="c-comments__body__author">Vladamir Babic</h3>
+            <h4 class="c-comments__body__subject">This is the subject of the comment.</h4>
+            <p class="c-comments__body__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. 
+
+            </p>
+            <a href="" class="c-button__reply">Reply</a>
+          </div>
+
+          <span class="c-comments__details__timestamp">December 16, 2017 2:34 pm</span>
+          <a href="" class="c-comment__view-replies c-button--small">View Replies</a>
+        -->
     </div>
   </main>
 

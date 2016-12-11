@@ -1,34 +1,74 @@
-.c-comment {
-	display: flex;
+.c-comments {
   position: relative;
-  @include e(img){
-  	@include border-radius(50%);
-  	max-width: 50px;
-  	margin: 0 20px 10px 10px;
-  }
-  @include e(body){
-  	@include e(author){
-			margin: 0 0 1em;
-  	}
-  	@include e(subject){
-  		font-weight: 700;
-  		margin: 0 0 .85em;
-  	}
-  	@include e(message){
-  		margin: 0 0 20px;
-  	}
-  }
-  @include e(details){
-  	@include e(timestamp){
-  		position: absolute;
-    	right: 0;
-    	top: 0;
-    	font-size: .8em;
-  	}
-  }
-  @include e(view-replies){
-  	position: absolute;
-    right: 0;
-    bottom: 0;
-  }
+  @include flex;
+  @include flex-direction(column);
+  color: $color-trout;
+  @include margin(20px, 20px);
+
+    @include e('title') {
+      text-transform: capitalize;
+      @extend %center ;
+    }
+}
+
+
+
+.c-comment {
+  position: relative;
+  @include flex;
+  @include flex-direction(column);
+  padding: 20px 0 10px 0;
+  border-top: 1px solid black(.3);
+  border-bottom: 1px solid black(.3);
+
+    @include e('body') {
+      @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+          @include relative(top -25px);
+          padding-left: 60px;
+      }
+    }
+    @include e('message'){
+      line-height: 1.5em;
+    }
+
+
+    @include e('span') {
+      @include m('timestamp') {
+        @include absolute(top 50px left 60px);
+        font-size: .7rem;
+        @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+          left: initial;
+          top: 25px;
+          right: 0;
+        }
+      }
+
+      @include m('counterReplies') {
+        padding: 3px 10px;
+        margin-left: 10px;
+        color: $color-white;
+        background-color: $color-picton-blue;
+        @include border-radius(5px);
+      }
+    }
+
+    @include e('title') {
+      @include m('subject') {
+        padding: 20px 0;
+        font-weight: 600;
+      }
+    }
+
+    @include e('actions') {
+      @include flex;
+      @include justify-content(space-between);
+      @include flex-align-items(flex-end);
+      @include padding(20px, 0, 10px);
+    }
+
+    @include e('link') {
+      font-size: .7em;
+      color: inherit;
+      @extend %smallCaps;
+    }
 }

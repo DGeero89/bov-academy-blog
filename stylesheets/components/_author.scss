@@ -1,0 +1,28 @@
+.c-author {
+  position: relative;
+  @include flex;
+
+    @include e('img') {
+      $size: conf($configuration-comments, 'size-c-author__img');
+      width: $size;
+      height: $size;
+      @include border-radius(50%);
+      align-self: center;
+    }
+
+    @include e('span') {
+      display: block;
+      padding: 10px;
+
+      @include m('fullname') {
+        @extend %smallCaps;
+      }
+
+      @include m('timestamp') {
+        font-size: .7em;
+        @media screen and (min-width: conf($configuration-breakpoints, 'desktop')) {
+          @include absolute(right 0 top 0);
+        }
+      }
+    }
+}
