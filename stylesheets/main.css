@@ -337,6 +337,40 @@ h2 {
   color: #6f97a9;
 }
 
+.c-comment {
+  display: flex;
+  position: relative;
+}
+.c-comment__img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  max-width: 50px;
+  margin: 0 20px 10px 10px;
+}
+.c-comment__body__author {
+  margin: 0 0 1em;
+}
+.c-comment__body__subject {
+  font-weight: 700;
+  margin: 0 0 .85em;
+}
+.c-comment__body__message {
+  margin: 0 0 20px;
+}
+.c-comment__details__timestamp {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: .8em;
+}
+.c-comment__view-replies {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .c-month {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #7c7df0;
