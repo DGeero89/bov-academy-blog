@@ -32,14 +32,9 @@
 ///
 
 @function get-configuration($confName, $option) {
-
-  @if not map-has-key($confName, $option) {
-
-    @error  'The option `#{$option} does not exist in #{$confName}. '
-          + 'Option should be one of #{ map-keys($confName) }.';
+  @if map-has-key($confName, $option) {
+    @return map-get($confName, $option);
   }
-
-  @return map-get($confName, $option);
 }
 
 /// @alias
