@@ -8,6 +8,15 @@
   background: $color-athens-gray;
 }
 
+.c-blog-date {
+  float: left;
+  // border: solid red 1px;
+}
+
+.c-blog-summary {
+  float: right;
+}
+
 .c-blog-post {
   //   IMAGE WIDTH 895PX
   //  IMAAGE HEIGHT 460PX
@@ -50,6 +59,7 @@
     max-width: 90%;
   }
 }
+
 
 .c-blog-post__links {
   margin: 2rem;

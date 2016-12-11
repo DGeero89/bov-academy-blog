@@ -650,6 +650,12 @@ h2 {
 .c-blog {
   background: #e6eaef; }
 
+.c-blog-date {
+  float: left; }
+
+.c-blog-summary {
+  float: right; }
+
 .c-blog-post {
   margin: 2rem auto; }
 
