@@ -50,5 +50,11 @@ $color-logo-site: lighten($color-picton-blue, 50%);
 $min-width: 320px;
 $max-width: 960px;
 
+$configuration-header: (
+  'min-height': 100px,
+  'container-width': 90%
+);
+
+
 $header-height: 100px;
 $header__container-width: 960px;
