@@ -1,13 +1,12 @@
 
 .l-header {
-  @extend %flex;
-  min-height: $header-height;
+  min-height: conf($configuration-header, 'min-height');
   background-color: $color-shark;
-  color: white();
 
   @include element('container') {
     @extend %flex;
-    width: get-configuration($configuration-header, 'container-width');
+    min-height: inherit;
+    width: conf($configuration-header, 'container-width');
     @include center;
     @include justify-content(space-around);
   }
