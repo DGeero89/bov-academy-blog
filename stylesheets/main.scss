@@ -8,17 +8,29 @@
 @import 'base/reset';
 @import 'base/typography';
 
-// @import 'layout/..';
-
+@import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navigation';
 @import 'layout/list';
 
+<<<<<<< HEAD
 // @import 'components/..'
 @import 'components/author';
 @import 'components/post_date';
 @import 'components/search';
 @import 'components/paginate';
+||||||| merged common ancestors
+// @import 'components/..'
+=======
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/themesSwitch';
+@import 'components/author';
+@import 'components/buttons';
+@import 'components/comments';
+@import 'components/month';
+@import 'components/archive-posts';
+>>>>>>> bdce03f1ce9e7c20b2438b7c5daea295a0427d0e
 
 // @import 'pages/..';
 

@@ -1,0 +1,30 @@
+.c-month {
+	font-family: $roboto;
+	background: $color-portage;
+	width: 3.625rem;
+	height: 3.625rem;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	border: .3125rem solid $color-hawkes-blue;
+	border-radius: 50%;
+	text-align: center;
+	color: $color-white;
+	font-size: .75rem;
+	line-height: 3rem;
+	&:before {
+		content: " ";
+		position: absolute;
+		z-index: -1;
+		width: 4.4rem;
+		height: 4.4rem;
+		background: $color-white;
+		border-radius: 50%;
+		top: -11px;
+		left: -11px;
+	}
+	@media (min-width: 700px) {
+		margin: 0;
+		left: -2rem;
+	}
+}

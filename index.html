@@ -18,7 +18,6 @@
   <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="stylesheet/main.css">
   <link rel="stylesheet" href="stylesheets/main.css">
 
   <!-- ICON
@@ -28,14 +27,61 @@
 
 <body class="l-body">
 
-  <!-- header -->
-  <header class="c-header">
-    <div class="c-header__container">
-      <div class="c-header__logo">
-        <img class="c-header__img" src="assets/BovAcademy_logo_head.png" alt="Bov Academy">
-        <div class="c-header__logo">
-          Bov Academy Blog <br> of Programming and Futuristic Engineering
+    <header class="l-header">
+      <div class="l-header__container">
+
+        <!-- Logo component -->
+        <div class="c-logo">
+          <a class="c-logo__link" title="Bov Blog Home Page" href="index.html">
+            <img class="c-logo__img" src="assets/BovAcademy_logo_head.png" alt="Bov Academy">
+          </a>
+          <h2 class="c-logo__title">
+            <span class="c-logo__span c-logo__span--acronym">
+              <strong class="c-logo__strong--acronym">Bov</strong>
+              Academy
+              <strong class="c-logo__strong--site">Blog</strong>
+            </span>
+            <span class="c-logo__span c-logo__span--motto">
+              of Programming and Futuristic Engineering
+            </span>
+          </h2>
         </div>
+
+        <!-- Navigation component -->
+        <nav class="c-navigation c-navigation--header" role="navigation" aria-label="primary" tabindex="0">
+          <a class="c-navigation__link c-navigation__link--active" href="#">Latest Posts</a>
+          <a class="c-navigation__link" href="#">Upcoming Posts</a>
+          <a class="c-navigation__link" href="#">Archive</a>
+        </nav>
+        <!-- End Navigation component -->
+
+        <!-- Themes switch component -->
+        <div class="c-themesSwitch">
+          <input class="c-themesSwitch__input--hidden" id="themeTrigger" type="checkbox" checked>
+          <img class="c-themesSwitch__img" src="assets/bov-academy-menu-icon-small.png" alt="Choose your theme" />
+          <label class="c-themesSwitch__label" for="themeTrigger" accesskey="t">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </label>
+          <ul class="l-list">
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Themes switch component -->
+
       </div>
     </div>
   </header>
@@ -44,7 +90,10 @@
   <!-- main -->
   <main class="c-main">
     <div class="c-main__container">
-      main content here
+      <br>
+      <a href="" class="c-button c-button__subscribe c-button--bordered c-button--small c-button--blue">Subscribe</a>
+      <a href="" class="c-button c-button__quick-read c-button--bordered">Quick Read</a>
+      <a href="" class="c-button c-button__go-to-post c-button--bordered">Go To Post</a>
 
     </div>
   </main>

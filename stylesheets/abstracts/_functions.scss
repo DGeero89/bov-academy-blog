@@ -1,0 +1,48 @@
+
+///
+/// Generate a black color with opacity
+///
+/// @param {Number} $opacity [1] - A value between 0 and 1
+///
+
+@function black($opacity: 1){
+  @return rgba(0, 0, 0, $opacity)
+}
+
+///
+/// Generate a white color with opacity
+///
+/// @param {Number} $opacity [1] - A value between 0 and 1
+/// @return {Color}
+///
+
+@function white($opacity: 1){
+  @return rgba(255, 255, 255, $opacity)
+}
+
+///
+/// Get a configuration value from an option
+///
+/// @param {String} $confName - Configuration's name
+/// @param {String} $option - Option's name
+/// @return {Value}
+/// @require $confName
+/// @example
+/// get-configuration($configuration-header, width)
+///
+
+@function get-configuration($confName, $option) {
+
+  @if not map-has-key($confName, $option) {
+
+    @error  'The option `#{$option} does not exist in #{$confName}. '
+          + 'Option should be one of #{ map-keys($confName) }.';
+  }
+
+  @return map-get($confName, $option);
+}
+
+/// @alias
+@function conf($confName, $option) {
+  @return get-configuration($confName, $option);
+}
