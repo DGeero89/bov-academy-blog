@@ -216,3 +216,16 @@
   align-items: $value;
 }
 
+//Tranform Element
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate transform
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}

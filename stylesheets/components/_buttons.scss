@@ -42,7 +42,7 @@
 
 	@include e(subscribe){
 		@include position(fixed);
-		@include rotate(-90);
+		@include rotate(90);
 		text-transform: uppercase;
 		padding: 10px 25px;
 		top: 30%;
