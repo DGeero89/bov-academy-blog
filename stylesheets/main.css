@@ -251,8 +251,11 @@ body {
       border-left: solid #DAE2F0; } }
 
 .c-archive-posts__header {
-  font-size: 3rem;
-  margin: 1rem auto; }
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #3F444A;
+  margin-top: 3rem; }
 
 .c-archive-posts__year {
   font-size: 1.3rem;
@@ -268,7 +271,8 @@ body {
       position: relative;
       background: #FFFFFF;
       padding-bottom: 2.6rem;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      margin-top: 3rem; } }
 
 .c-archive-posts__entry {
   text-align: center;
@@ -297,6 +301,6 @@ body {
   max-width: 18.126rem; }
   @media (min-width: 700px) {
     .c-archive-posts__title {
-      margin-bottom: 0; } }
+      margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
