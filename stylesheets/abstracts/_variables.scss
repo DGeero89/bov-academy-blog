@@ -28,19 +28,22 @@ $color-hawkes-blue: #DEDEFC;
 $color-cadet-blue: #ACB9C8;
 $color-periwinkle-gray: #DAE2F0;
 $color-arsenic: #3F444A;
-$color-white: #FFFFFF;
+$color-athens-gray: #e6eaef;
+$color-polar: #fafcfe;
 $color-picton-blue: #49C4E0;
 $color-slate-gray: #738494;
 $color-viking: #71C9DA;
+$color-mako: #3F444B;
 $color-viking: #71C9DA;
 $color-heather: #c4ced7;
 $color-trout: #4f565f;
 $color-morning-glory: #9cd0dc;
 $color-gothic: #6f97a9;
 $color-half-baked: #94c8d4;
-
+$color-white: #fff;
 $color-logo: lighten($color-picton-blue, 30%);
 $color-logo-site: lighten($color-picton-blue, 50%);
+
 
 
 // ----------------------------------------------------------------------
@@ -69,8 +72,3 @@ $configuration-breakpoints: (
   tablet: 768px,
   desktop: 1024px,
   desktopHD: 1200px) !default;
-
-
-
-
-

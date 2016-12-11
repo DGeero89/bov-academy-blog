@@ -14,9 +14,11 @@
   color: $color-trout;
   font-weight: 300;
 
+
   &:focus{
     outline: none;
   }
+
 
   @include e(quick-read){
     &:before{
@@ -29,26 +31,35 @@
     }
   }
 
-  @include e(go-to-post){
-    &:before{
-      content: "\f2d0";
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      padding: 0 5px 0 0;
-    }
-  }
+	@include e(go-to-post){
+		&:before{
+			content: "\f2d0";
+			font-family: FontAwesome;
+			font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+    	padding: 0 5px 0 0;
+		}
+	}
 
-  @include e(subscribe){
-    @include position(fixed);
-    @include rotate(90);
-    text-transform: uppercase;
-    padding: 10px 25px;
-    top: 30%;
-    right: -40px;
-    font-weight: 400;
-  }
+
+	@include e(subscribe){
+		@include position(fixed);
+		@include rotate(90);
+		text-transform: uppercase;
+		padding: 10px 25px;
+		top: 30%;
+		right: -40px;
+		font-weight: 400;
+	}
+
+	@include m(bordered){
+		@include border-radius(2px);
+		border: 1px solid $color-heather;
+	}
+
+
+
 
   @include m('normal'){
     font-size: 1rem;
@@ -87,5 +98,12 @@
     border: 1px solid $color-half-baked;
     color: $color-gothic;
   }
+
+
+	@include m(blue){
+		background: $color-morning-glory;
+		border: 1px solid $color-half-baked;
+		color: $color-gothic;
+	}
 
 }

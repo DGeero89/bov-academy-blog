@@ -1,0 +1,57 @@
+// This is just giving the background color to the blog
+// based on the updated mockup.  Not sure if other pages
+// also need this color (in which case we can remove this
+// and edit the _reset.scss file or something) as the
+// updated mockup only shows the blog page with this new
+// color
+.c-blog {
+  background: $color-athens-gray;
+}
+
+.c-blog-post {
+  //   IMAGE WIDTH 895PX
+  //  IMAAGE HEIGHT 460PX
+  // This can be removed once the c-main or c-main__container
+  // responses to a mobile width, currently it is at max-width 900px
+  // max-width: 400px;
+  margin: 2rem auto;
+  @media (min-width: 700px) {
+    // border-top-left-radius: 5px;
+    // border-top-right-radius: 5px;
+  }
+}
+
+.c-blog-post__image {
+  max-width: 100%;
+
+  @media (min-width: 700px) {
+    // max-height: 460px;
+    // text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+.c-blog-gist {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  // border: solid red 1px;
+  background: white;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -5rem;
+  padding: .5rem;
+  background-image: linear-gradient($color-polar, $color-athens-gray);
+  box-shadow: 0px -3px 3px $color-cadet-blue,
+        -2px -4px 3px $color-cadet-blue, 2px -4px 3px $color-cadet-blue;
+  @media (min-width: 700px) {
+    padding: 1rem;
+    max-width: 90%;
+  }
+}
+
+.c-blog-post__links {
+  margin: 2rem;
+  border: solid red 2px;
+}

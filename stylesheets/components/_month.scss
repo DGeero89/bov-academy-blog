@@ -9,7 +9,7 @@
 	border: .3125rem solid $color-hawkes-blue;
 	border-radius: 50%;
 	text-align: center;
-	color: $color-white;
+	color: white(1);
 	font-size: .75rem;
 	line-height: 3rem;
 	&:before {
@@ -18,7 +18,7 @@
 		z-index: -1;
 		width: 4.4rem;
 		height: 4.4rem;
-		background: $color-white;
+		background: white(1);
 		border-radius: 50%;
 		top: -11px;
 		left: -11px;
