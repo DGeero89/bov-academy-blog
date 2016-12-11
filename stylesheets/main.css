@@ -20,7 +20,7 @@
 .c-author__img--addComment, .c-themesSwitch, .c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
   display: none; }
 
-.c-themesSwitch__label {
+.c-themesSwitch__label, .c-button {
   cursor: pointer; }
 
 .c-author__span--fullname, .c-navigation--code .c-navigation__link, .c-button--smallCaps, .c-comments__title--addComment, .c-comment__link {
