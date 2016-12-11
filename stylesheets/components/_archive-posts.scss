@@ -1,9 +1,14 @@
 .c-archive-posts {
 	color: $color-arsenic;
-	z-index: -30;
+	z-index: -3;
 	@media (min-width: 700px) {
 		border-left: solid $color-periwinkle-gray;
 	}
+}
+
+.c-archive-posts__header {
+	font-size: 3rem;
+	margin: 1rem auto;
 }
 
 .c-archive-posts__year {
@@ -43,7 +48,6 @@
 	@media (min-width: 700px) {
 		max-width: 35rem;
 		// height: 14.6875rem;
-
 	}
 }
 
@@ -57,7 +61,6 @@
 		// max-width: 35rem;
 		margin-bottom: 0;
 	}
-
 }
 
 body {

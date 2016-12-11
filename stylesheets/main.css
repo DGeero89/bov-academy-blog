@@ -245,10 +245,14 @@ body {
 
 .c-archive-posts {
   color: #3F444A;
-  z-index: -30; }
+  z-index: -3; }
   @media (min-width: 700px) {
     .c-archive-posts {
       border-left: solid #DAE2F0; } }
+
+.c-archive-posts__header {
+  font-size: 3rem;
+  margin: 1rem auto; }
 
 .c-archive-posts__year {
   font-size: 1.3rem;
