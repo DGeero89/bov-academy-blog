@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bov Academy Blog Components</title>
+  <meta name="description" content="Bov Academy Blog">
+  <meta name="author" content="imanuel_gittens, gabriele_romeo, brian_hernandez, david_gierman">
+
+  <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700" rel="stylesheet">
+
+  <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+  <!-- ICON
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/118670e9e2.js"></script>
+</head>
+
+<body class="l-body">
+
+    <header class="l-header">
+      <div class="l-header__container">
+
+        <!-- Logo component -->
+        <div class="c-logo">
+          <a class="c-logo__link" title="Bov Blog Home Page" href="index.html">
+            <img class="c-logo__img" src="assets/BovAcademy_logo_head.png" alt="Bov Academy">
+          </a>
+          <h2 class="c-logo__title">
+            <span class="c-logo__span c-logo__span--acronym">
+              <strong class="c-logo__strong--acronym">Bov</strong>
+              Academy
+              <strong class="c-logo__strong--site">Blog</strong>
+            </span>
+            <span class="c-logo__span c-logo__span--motto">
+              of Programming and Futuristic Engineering
+            </span>
+          </h2>
+
+
+        <!-- Navigation component -->
+        <nav class="c-navigation c-navigation--header" role="navigation" aria-label="primary" tabindex="0">
+          <a class="c-navigation__link c-navigation__link--active" href="#">Latest Posts</a>
+          <a class="c-navigation__link" href="#">Upcoming Posts</a>
+          <a class="c-navigation__link" href="#">Archive</a>
+        </nav>
+        <!-- End Navigation component -->
+
+        <!-- Themes switch component -->
+        <div class="c-themesSwitch">
+          <input class="c-themesSwitch__input--hidden" id="themeTrigger" type="checkbox" checked>
+          <img class="c-themesSwitch__img" src="assets/bov-academy-menu-icon-small.png" alt="Choose your theme" />
+          <label class="c-themesSwitch__label" for="themeTrigger" accesskey="t">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </label>
+          <ul class="l-list">
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+            <li class="l-list__item">
+              <div class="c-theme">
+                <img class="c-theme__img" src="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Themes switch component -->
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- main -->
+  <main class="c-main">
+    <div class="c-main__container">
+      <h1>Components</h1>
+
+      <h2>Buttons</h2>
+      <!-- Buttons -->
+      <a href="" class="c-button c-button__subscribe c-button--bordered c-button--small c-button--blue">Subscribe</a>
+      <a href="" class="c-button c-button__quick-read c-button--bordered">Quick Read</a>
+      <a href="" class="c-button c-button__go-to-post c-button--bordered">Go To Post</a>
+
+      <h2>Comments</h2>
+      <!-- Comment-->
+      <div class="c-comment">
+        <div class="c-comment__author-pic">
+          <img class="c-comment__img" src="http://placehold.it/100x100" />
+        </div>
+        <div class="c-comment__body">
+          <h3 class="c-comment__body__author">Vladamir Babic</h3>
+          <h4 class="c-comment__body__subject">This is the subject of the comment.</h4>
+          <p class="c-comment__body__message">This is the body of the comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. What a wonderful thoughtful comment. 
+
+          </p>
+          <a href="" class="c-button__reply">Reply</a>
+        </div> 
+        
+
+        <span class="c-comment__details__timestamp">December 16, 2017 2:34 pm</span>
+        <a href="" class="c-comment__view-replies c-button--small">View Replies</a>
+    </div>
+  </main>
+
+
+
+  <!-- footer -->
+  <footer class="l-footer">
+    <div class="l-footer__container">
+      <nav class="c-menu c-menu--footer">
+        <a class="c-menu__link" href="#">Home</a>
+        <a class="c-menu__link" href="#">Programs and Career Paths</a>
+        <a class="c-menu__link" href="#">Our Mission</a>
+        <a class="c-menu__link" href="#">Careers</a>
+        <a class="c-menu__link" href="#">Contact</a>
+      </nav>
+      <div class="c-social">
+        <ul class="l-list">
+          <li class="l-list__item">
+            <div class="c-social__icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-social__icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-social__icon"><a href="#"><img src="assets/Enlightenment_temp_icon.png" /></a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="c-developers">
+        <h4 class="c-developers__title">
+          Site Developed By Bov Academy Students
+        </h4>
+        <ul class="l-list">
+          <li class="l-list__item">
+            <div class="c-developers__info">
+              <img src="http://placehold.it/100x100" />
+              <p>Imanuel Gittens</p>
+            </div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-developers__info">
+              <img src="http://placehold.it/100x100" />
+              <p>Gabriele Romeo</p>
+            </div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-developers__info">
+              <img src="http://placehold.it/100x100" />
+              <p>David Hernandez</p>
+            </div>
+          </li>
+          <li class="l-list__item">
+            <div class="c-developers__info">
+              <img src="http://placehold.it/100x100" />
+              <p>David Gierman</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
