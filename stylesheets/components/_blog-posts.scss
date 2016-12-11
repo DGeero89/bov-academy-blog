@@ -43,6 +43,8 @@
   top: -5rem;
   padding: .5rem;
   background-image: linear-gradient($color-polar, $color-athens-gray);
+  box-shadow: 0px -6px 10px $color-slate-gray,
+        -4px -7px 10px $color-slate-gray, 4px -7px 10px $color-slate-gray;
   @media (min-width: 700px) {
     padding: 1rem;
     max-width: 90%;
