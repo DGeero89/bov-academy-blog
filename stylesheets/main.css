@@ -734,7 +734,7 @@ h2 {
       width: 70%; } }
   @media screen and (min-width: 1024px) {
     .c-code {
-      width: 50%; } }
+      width: 100%; } }
   .c-code__body {
     font-size: .8em;
     background-color: #F6F6F6;
