@@ -1,0 +1,21 @@
+
+///
+/// Generate a black color with opacity
+///
+/// @param {Number} $opacity [1] - A value between 0 and 1
+///
+
+@function black($opacity: 1){
+  @return rgba(0, 0, 0, $opacity)
+}
+
+///
+/// Generate a white color with opacity
+///
+/// @param {Number} $opacity [1] - A value between 0 and 1
+/// @return {Color}
+///
+
+@function white($opacity: 1){
+  @return rgba(255, 255, 255, $opacity)
+}

@@ -8,9 +8,14 @@
 @import 'base/reset';
 @import 'base/typography';
 
-// @import 'layout/..';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+@import 'layout/list';
 
-// @import 'components/..'
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/themesSwitch';
 
 @import 'components/month';
 @import 'components/archive-posts';
@@ -18,5 +23,3 @@
 // @import 'pages/..';
 
 // @import 'themes/..';
-
-

@@ -1,0 +1,14 @@
+
+.l-header {
+  @extend %flex;
+  min-height: $header-height;
+  background-color: $color-shark;
+  color: white();
+
+  @include element('container') {
+    @extend %flex;
+    width: $header__container-width;
+    @include center;
+    @include justify-content(space-between);
+  }
+}
