@@ -163,4 +163,19 @@ a {
     left: 15px;
     color: #738494; }
 
+.c-pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #3F444B;
+  padding: 0 7%; }
+  .c-pagination a {
+    color: #3F444B; }
+    .c-pagination a:hover {
+      color: #49C4E0; }
+    .c-pagination a:active {
+      color: #49C4E0; }
+  .c-pagination .c-pagination__page-numbers li {
+    padding: 0 20px; }
+
 /*# sourceMappingURL=main.css.map */

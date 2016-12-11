@@ -1,0 +1,19 @@
+.c-pagination{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: $color-mako;
+  padding: 0 7%;
+  a{
+    color: $color-mako;
+    &:hover{
+      color: $color-picton-blue;
+    }
+    &:active{
+      color: $color-picton-blue;
+    }
+  }
+  .c-pagination__page-numbers li{
+    padding: 0 20px;
+  }
+}
