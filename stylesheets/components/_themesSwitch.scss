@@ -16,8 +16,15 @@
     }
   }
 
+  @include element('label') {
+    font-size: 1.4em;
+    color: white(.4);
+    @include padding(0, 5px, 0, 10px);
+    @extend %pointer;
+  }
+
   @include element('img') {
-    width: 24px;
+    width: 16px;
   }
 
 }
