@@ -225,7 +225,32 @@
   -webkit-transform: $transforms;
           transform: $transforms;
 }
+
 // rotate transform
+
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
+
+/// Generate padding for an element
+/// @param {Value} $top - Padding top
+/// @param {Value} $right - Padding Right
+/// @param {Value} $bottom - Padding Bottom
+/// @param {Value} $left - Padding Left
+
+@mixin padding($top, $right, $bottom, $left) {
+  @if ($top != null) {
+    padding-top: $top;
+  }
+  @if ($right != null) {
+    padding-right: $left;
+  }
+  @if ($bottom != null) {
+    padding-bottom: $bottom;
+  }
+  @if ($left != null) {
+    padding-left: $left;
+  }
+}
+
+
