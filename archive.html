@@ -17,7 +17,6 @@
 
   <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="stylesheets/main.css">
 
   <!-- ICON
@@ -45,13 +44,13 @@
               of Programming and Futuristic Engineering
             </span>
           </h2>
-
+        </div>
 
         <!-- Navigation component -->
         <nav class="c-navigation c-navigation--header" role="navigation" aria-label="primary" tabindex="0">
-          <a class="c-navigation__link" href="index.html">Latest Posts</a>
+          <a class="c-navigation__link c-navigation__link--active" href="#">Latest Posts</a>
           <a class="c-navigation__link" href="#">Upcoming Posts</a>
-          <a class="c-navigation__link c-navigation__link--active" href="archive.html">Archive</a>
+          <a class="c-navigation__link" href="archive.html">Archive</a>
         </nav>
         <!-- End Navigation component -->
 
@@ -83,14 +82,23 @@
         <!-- End Themes switch component -->
 
       </div>
-    </div>
-  </header>
+    </header>
 
 
   <!-- main -->
   <main class="c-main">
     <div class="c-main__container">
-      <div>SEARCH BOX HERE</div>
+      <!-- Search component -->
+      <div class="c-search">
+        <div class="c-search__input">
+          <form>
+            <input type="text" placeholder="Search"/>
+          </form>
+        </div>
+        <div class="c-search__icon">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
       <h1 class="c-archive-posts__header">Archive</h1>
         <section class="c-archive-posts">
           <h2 class="c-archive-posts__year">2016</h2>
