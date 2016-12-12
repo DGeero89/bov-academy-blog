@@ -13,17 +13,17 @@
   -ms-flex-direction: row;
   flex-direction: row; }
 
-.c-navigation--header .c-navigation__link--active:after, .c-comments, .c-form {
+.c-navigation--header .c-navigation__link--active:after, .c-comments, .c-form, .c-code {
   margin-left: auto;
   margin-right: auto; }
 
 .c-author__img--addComment, .c-themesSwitch, .c-themesSwitch__input--hidden, .c-themesSwitch__input--hidden:checked ~ .l-list {
   display: none; }
 
-.c-themesSwitch__label {
+.c-themesSwitch__label, .c-button {
   cursor: pointer; }
 
-.c-author__span--fullname, .c-button--smallCaps, .c-comments__title--addComment, .c-comment__link {
+.c-author__span--fullname, .c-navigation--code .c-navigation__link, .c-button--smallCaps, .c-comments__title--addComment, .c-comment__link {
   font-variant: small-caps;
   text-transform: uppercase; }
 
@@ -135,12 +135,22 @@ h2 {
   margin: 0px auto; }
 
 .c-menu--footer {
-  padding-bottom: 30px; }
-
-.c-menu--footer .c-menu__link {
-  text-transform: uppercase;
-  color: #738494;
-  padding: 0 10px; }
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 30px 10px; }
+  .c-menu--footer .c-menu__link {
+    padding: 20px;
+    text-transform: uppercase;
+    color: #738494; }
+  .c-menu--footer .c-menu__link:hover {
+    color: #d8dde1; }
+  @media screen and (min-width: 768px) {
+    .c-menu--footer {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 30px; }
+      .c-menu--footer .c-menu__link {
+        padding: 0 10px; } }
 
 .c-social {
   padding-bottom: 40px;
@@ -152,6 +162,9 @@ h2 {
 .c-social__icon a {
   color: #738494; }
 
+.c-social__icon a:hover {
+  color: #d8dde1; }
+
 .c-developers {
   border-top: 1px solid #738494;
   padding-top: 40px;
@@ -161,7 +174,10 @@ h2 {
   padding-bottom: 40px; }
 
 .c-developers__info {
-  padding: 0 40px; }
+  padding: 20px; }
+  @media screen and (min-width: 768px) {
+    .c-developers__info {
+      padding: 0 40px; } }
 
 .c-developers__info img {
   border-radius: 50%; }
@@ -176,6 +192,11 @@ h2 {
 .l-list {
   display: flex;
   justify-content: center; }
+  .l-list--row-on-small-screen {
+    flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      .l-list--row-on-small-screen {
+        flex-direction: row; } }
 
 .c-author {
   position: relative;
@@ -308,6 +329,7 @@ h2 {
   display: -ms-flexbox;
   display: flex; }
   .c-navigation--header {
+    color: rgba(255, 255, 255, 0.5);
     -webkit-box-align: end;
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
@@ -319,7 +341,7 @@ h2 {
       padding-right: 10px;
       padding-bottom: 15px;
       padding-left: 10px;
-      color: rgba(255, 255, 255, 0.5); }
+      color: inherit; }
       @media screen and (min-width: 1024px) {
         .c-navigation--header .c-navigation__link {
           padding-top: 15px;
@@ -337,6 +359,12 @@ h2 {
       width: 100%;
       height: 3px;
       background: #49C4E0; }
+  .c-navigation--code {
+    color: rgba(0, 0, 0, 0.5); }
+    .c-navigation--code .c-navigation__link {
+      font-size: .9em; }
+    .c-navigation--code .c-navigation__link:hover, .c-navigation--code .c-navigation__link--active {
+      color: #49C4E0; }
 
 .c-themesSwitch {
   padding: 10px;
@@ -685,5 +713,43 @@ h2 {
 .c-blog-post__links {
   margin: 2rem;
   border: solid red 2px; }
+
+.c-code {
+  padding: 20px;
+  color: #4f565f; }
+  @media screen and (min-width: 768px) {
+    .c-code {
+      width: 70%; } }
+  @media screen and (min-width: 1024px) {
+    .c-code {
+      width: 50%; } }
+  .c-code__body {
+    font-size: .8em;
+    background-color: #F6F6F6;
+    padding: 10px; }
+    @media screen and (min-width: 768px) {
+      .c-code__body {
+        font-size: 1em;
+        padding: 40px; } }
+  .c-code__caption {
+    padding: 10px 20px;
+    font-size: .8em; }
+  .c-code__item {
+    position: relative;
+    counter-increment: step-counter;
+    padding: 10px 0; }
+    .c-code__item:before {
+      content: counter(step-counter);
+      padding: 3px 8px; }
+  .c-code__color--var, .c-code__color--obj {
+    color: #FF8A00; }
+  .c-code__color--varName {
+    color: #4F8AFD; }
+  .c-code__color--number {
+    color: #FF6060; }
+  .c-code__color--method {
+    color: #A952FE; }
+  .c-code__color--comment {
+    color: rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=main.css.map */
