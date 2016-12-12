@@ -1,21 +1,44 @@
 .c-search{
   position: relative;
   line-height: 40px;
+  margin: 30px 0;
+
   .c-search__input input{
-    padding: 5px 5px 5px 50px;
+    padding: 20px 5px 20px 50px;
     width: 100%;
-    height: 40px;
-    border-radius: 2px;
-    border: 1px solid $color-viking;
+    height: 50px;
+    border: 1px solid $color-geyser;
     background: $color-catskill-white;
-    font-size:25px;
+    font-size:22px;
     color: $color-slate-gray;
+    
+    &::-webkit-input-placeholder {
+      color: $color-submarine;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $color-submarine;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $color-submarine;  
+    }
+
+    &:-ms-input-placeholder {  
+      color: $color-submarine;  
+    }
+
+    @include border-radius(3px);
+
+    &:focus{
+    outline:none;
+    }
   }
   .c-search__icon{
     position: absolute;
     font-size:20px;
-    top:3%;
+    top:10%;
     left:15px;
-    color: $color-slate-gray;
+    color: $color-submarine;
   }
 }
