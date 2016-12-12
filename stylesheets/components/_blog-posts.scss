@@ -24,6 +24,7 @@
   // responses to a mobile width, currently it is at max-width 900px
   // max-width: 400px;
   margin: 2rem auto;
+
   @media (min-width: 700px) {
     // border-top-left-radius: 5px;
     // border-top-right-radius: 5px;
@@ -32,6 +33,12 @@
 
 .c-blog-post__image {
   max-width: 100%;
+
+  @include e(wrap){
+    height: 460px;
+    overflow: hidden;
+  }
+
   @media (min-width: 700px) {
     // max-height: 460px;
     // text-align: center;

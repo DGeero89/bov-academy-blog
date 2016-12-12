@@ -335,19 +335,11 @@ h2 {
   text-align: center; }
 
 .c-link__a {
-<<<<<<< HEAD
-  color: #49C4E0;
-  background: #eff3f8;
-  padding: .5rem 1rem;
-  border-radius: 3px;
-  border-top: solid #E2E5E7 1px;
-=======
   color: #49c4e0;
   background: #eff3f8;
   padding: .5rem 1rem;
   border-radius: 3px;
   border-top: solid #e2e5e7 1px;
->>>>>>> master
   margin-left: .7rem; }
 
 .c-logo {
@@ -739,6 +731,9 @@ h2 {
 
 .c-blog-post__image {
   max-width: 100%; }
+  .c-blog-post__image__wrap {
+    height: 460px;
+    overflow: hidden; }
   @media (min-width: 700px) {
     .c-blog-post__image {
       border-top-left-radius: 5px;
@@ -782,22 +777,14 @@ h2 {
   position: relative;
   width: 100%;
   top: -100px;
-<<<<<<< HEAD
-  background: #fff;
-=======
   background: white;
->>>>>>> master
   background-size: cover;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   display: flex;
   justify-content: flex-start;
   padding-top: 60px;
-<<<<<<< HEAD
-  color: #3F444B; }
-=======
   color: #3f444b; }
->>>>>>> master
   .c-single-post .c-single-post__body .c-single-post__date {
     width: 10%; }
   .c-single-post .c-single-post__body .c-single-post__info {
