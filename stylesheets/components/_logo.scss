@@ -1,11 +1,12 @@
 
 .c-logo {
-
+  
   @extend %flex;
   @extend %flex-direction;
   align-self: center;
   color: $color-logo;
-
+  flex-grow: 1;
+  
   @include element('img') {
     width: 60px;
     margin-right: 20px;

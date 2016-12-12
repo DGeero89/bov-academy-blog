@@ -1,9 +1,10 @@
 
 .c-navigation {
   @include flex;
-
+  
   @include modifier('header') {
     color: white(0.5);
+    flex-grow: 2;
     @include flex-align-items(flex-end);
 
     & .c-navigation__link {
