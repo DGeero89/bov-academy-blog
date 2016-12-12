@@ -1,0 +1,12 @@
+.c-link {
+  text-align: center;
+}
+
+.c-link__a {
+  color: $color-picton-blue;
+  background: $color-catskill-white;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  border-top: solid $color-iron 1px;
+  margin-left: .7rem;
+}
