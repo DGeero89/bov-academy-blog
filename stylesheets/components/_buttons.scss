@@ -80,6 +80,11 @@
     margin: 0 auto;
   }
 
+  @include m('left') {
+    // display: block;
+    margin: 1rem auto 0 3rem;
+  }
+
   @include m('smallCaps') {
     @extend %smallCaps;
   }
