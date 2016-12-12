@@ -497,6 +497,8 @@ h2 {
   .c-button--centered {
     display: block;
     margin: 0 auto; }
+  .c-button--left {
+    margin: 1rem auto 0 3rem; }
   .c-button--picton-blue {
     background-color: #49c4e0;
     color: white; }
