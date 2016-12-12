@@ -1,6 +1,8 @@
 .c-archive-posts {
 	color: $color-arsenic;
 	z-index: -3;
+	max-width: 600px;
+	margin: 0 auto;
 	@media (min-width: 700px) {
 		border-left: solid $color-periwinkle-gray .25rem;
 	}
@@ -40,8 +42,8 @@
 	top: -1.7rem;
 	z-index: -2;
 	@media (min-width: 700px) {
-		width: 500px
-		margin 0 auto;
+		width: 500px;
+		margin: 0 auto;
 		top: -3.7rem;
 	}
 }

@@ -643,8 +643,15 @@ h2 {
       left: -2rem; } }
 
 .c-archive-posts {
+<<<<<<< HEAD
   color: #3F444A;
   z-index: -3; }
+=======
+  color: #3f444a;
+  z-index: -3;
+  max-width: 600px;
+  margin: 0 auto; }
+>>>>>>> master
   @media (min-width: 700px) {
     .c-archive-posts {
       border-left: solid #DAE2F0 0.25rem; } }
@@ -682,7 +689,8 @@ h2 {
   z-index: -2; }
   @media (min-width: 700px) {
     .c-archive-posts__entry {
-      width: 500px margin 0 auto;
+      width: 500px;
+      margin: 0 auto;
       top: -3.7rem; } }
 
 .c-archive-posts__image {
