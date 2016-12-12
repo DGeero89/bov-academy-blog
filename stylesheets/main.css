@@ -702,12 +702,20 @@ h2 {
   position: relative;
   top: -5rem;
   padding: .5rem;
-  background-image: linear-gradient(#fafcfe, #e6eaef);
-  box-shadow: 0px -3px 3px #acb9c8, -2px -4px 3px #acb9c8, 2px -4px 3px #acb9c8; }
+  background-image: linear-gradient(#fafcfe, #e6eaef); }
   @media (min-width: 700px) {
     .c-blog-gist {
       padding: 1rem;
       max-width: 90%; } }
+  .c-blog-gist__overlay {
+    box-shadow: 0px -7px 10px 0px #738494, 0px 0px 0px 0px #738494, -1px -10px 20px 0px #738494;
+    width: 100%;
+    height: 200px;
+    opacity: .18;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; }
 
 .c-blog-post__links {
   margin: 2rem;
