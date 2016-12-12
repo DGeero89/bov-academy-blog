@@ -720,6 +720,12 @@ h2 {
 .c-blog {
   background: #e6eaef; }
 
+.c-blog-date {
+  float: left; }
+
+.c-blog-summary {
+  float: right; }
+
 .c-blog-post {
   margin: 2rem auto; }
 
@@ -742,6 +748,7 @@ h2 {
   position: relative;
   top: -5rem;
   padding: .5rem;
+  line-height: 1.4rem;
   background-image: linear-gradient(#fafcfe, #e6eaef); }
   @media (min-width: 700px) {
     .c-blog-gist {
