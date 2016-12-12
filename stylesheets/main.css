@@ -283,22 +283,38 @@ h2 {
 
 .c-search {
   position: relative;
-  line-height: 40px; }
+  line-height: 40px;
+  margin: 30px 0; }
   .c-search .c-search__input input {
-    padding: 5px 5px 5px 50px;
+    padding: 20px 5px 20px 50px;
     width: 100%;
-    height: 40px;
-    border-radius: 2px;
-    border: 1px solid #71c9da;
+    height: 50px;
+    border: 1px solid #d3dae2;
     background: #eff3f8;
-    font-size: 25px;
-    color: #738494; }
+    font-size: 22px;
+    color: #738494;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+    .c-search .c-search__input input::-webkit-input-placeholder {
+      color: #bac7ca; }
+    .c-search .c-search__input input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #bac7ca; }
+    .c-search .c-search__input input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #bac7ca; }
+    .c-search .c-search__input input:-ms-input-placeholder {
+      color: #bac7ca; }
+    .c-search .c-search__input input:focus {
+      outline: none; }
   .c-search .c-search__icon {
     position: absolute;
     font-size: 20px;
-    top: 3%;
+    top: 10%;
     left: 15px;
-    color: #738494; }
+    color: #bac7ca; }
 
 .c-pagination {
   display: flex;
