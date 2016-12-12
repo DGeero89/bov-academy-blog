@@ -725,6 +725,9 @@ h2 {
 
 .c-blog-post__image {
   max-width: 100%; }
+  .c-blog-post__image__wrap {
+    height: 460px;
+    overflow: hidden; }
   @media (min-width: 700px) {
     .c-blog-post__image {
       border-top-left-radius: 5px;
