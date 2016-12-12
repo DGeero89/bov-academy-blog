@@ -13,7 +13,7 @@
   font-family: $roboto;
   color: $color-trout;
   font-weight: 300;
-
+  @extend %pointer;
 
   &:focus{
     outline: none;
